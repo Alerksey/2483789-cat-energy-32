@@ -9,9 +9,9 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__container">
-  <header class="main-header">
-    <nav class="navigation">
+<body class="page__body body">
+  <header class="body__header header">
+    <nav class="header__navigation navigation">
       <a class="navigation__logo logo" href="#">
         <img class="logo__image" src="./images/logo-desktop.svg" width="202" height="59" alt="logo">
       </a>
@@ -37,9 +37,13 @@
       </button>
     </nav>
   </header>
-  <main class="main-container page_container">
-    <section class="hero">
-      <img class="hero__image" src="./images/index-cat-mobilel/png" width="280" height="40" alt="Cat energy product">
+  <main class="main-container main">
+    <section class="main__hero hero">
+      <picture>
+        <source media="(min-width: 768px)" width="552" height="499" type="image/png" srcset="images/index-cat@1x.png 1x, images/index-cat@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-cat-tablet-1@1x.png 1x, images/index-cat-tablet-1@2x.png 2x">
+        <img class="hero__image" src="images/index-cat-mobile-1@1x.png" width="280" height="270" srcset="images/index-cat@2x.png 2x" alt="Cat energy product">
+      </picture>
       <h2 class="hero__title">Функциональное питание <br> для котов</h2>
       <p class="hero__content">Занялся собой? Займись котом!</p>
       <button class="hero__button button" type="button">
@@ -47,7 +51,7 @@
       </button>
     </section>
 
-    <section class="programs">
+    <section class="main__programs programs">
       <h2 class="visually-hidden">Выбор программы</h2>
       <ul class="programs__list">
         <li class="programs__item program">
@@ -63,7 +67,7 @@
       </ul>
     </section>
 
-    <section class="instructions">
+    <section class="main__instructions instructions">
       <h2 class="instructions__header">Как это работает</h2>
       <ul class="instructions__list">
         <li class="instructions__item step step--one">
@@ -80,7 +84,7 @@
         </li>
       </ul>
     </section>
-    <section class="experience">
+    <section class="main__experience experience">
       <h2 class="experience__header">Живой пример</h2>
       <div class="experience__description">
         <p class="experience__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -100,22 +104,26 @@
         </div>
       </div>
       <div class="experience__demo demo">
-        <img class="demo__image" src="#" width="560" height="512" alt="Демонстрация">
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slides-tablet@1x.png 1x, images/slides-tablet@2x.png 2x">
+          <img class="demo__image" src="images/mobile-slider@1x.png" width="280" height="256" srcset="images/mobile-slider@2x.png 2x" alt="Демонстрация">
+        </picture>
+
         <div class="demo__slider"></div>
       </div>
     </section>
-    <section class="map">
+
+    <section class="main__map map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="#" width="640" height="724" alt="Карта">
-      <div class="container">
-        <div class="map__invitation invitation">
-          <div class="invitation__title">Приглашаем к сотрудничеству дилеров!</div>
-          <div class="invitation__address address">
-            <p class="address__street">ул. Б. Конюшенная, д. 19/8</p>
-            <p class="address__city">Санкт-Петербург</p>
-          </div>
-        </div>
+      <div class="map__invitation invitation">
+        <h3 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <address class="invitation__address">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="map__image" src="images/map-mobile@1x.png" width="320" height="362" srcset="images/map-mobile@2x.png 2x" alt="Карта проезда">
+      </picture>
     </section>
   </main>
 

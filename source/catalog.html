@@ -106,18 +106,17 @@
         <div class="demo__slider"></div>
       </div>
     </section>
-    <section class="map">
+    <section class="main__map map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="#" width="640" height="724" alt="Карта">
-      <div class="container">
-        <div class="map__invitation invitation">
-          <div class="invitation__title">Приглашаем к сотрудничеству дилеров!</div>
-          <div class="invitation__address address">
-            <p class="address__street">ул. Б. Конюшенная, д. 19/8</p>
-            <p class="address__city">Санкт-Петербург</p>
-          </div>
-        </div>
+      <div class="map__invitation invitation">
+        <h3 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <address class="invitation__address">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
+      <picture>
+        <source media="(min-width: 768px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="map__image" src="images/map-mobile@1x.png" width="320" height="362" srcset="images/map-mobile@2x.png 2x" alt="Карта проезда">
+      </picture>
     </section>
   </main>
 
