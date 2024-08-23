@@ -1,9 +1,11 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/root.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+
 
 /* BLOCKS */
+@import "./blocks/cards-list.scss";
 @import "./blocks/navigation.scss";
 @import "./blocks/button-burger.scss";
 @import "./blocks/buttons.scss";
