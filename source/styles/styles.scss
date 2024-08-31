@@ -1,4 +1,33 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/root.scss";
+@import "common/variables";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+
+/* BLOCKS */
+@import "./blocks/body.scss";
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/cards-list.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/button-burger.scss";
+@import "./blocks/buttons.scss";
+@import "./blocks/card-title.scss";
+@import "./blocks/card.scss";
+@import "./blocks/cards.scss";
+@import "./blocks/costs.scss";
+@import "./blocks/demo.scss";
+@import "./blocks/experience.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/instructions.scss";
+@import "./blocks/instructions-list.scss";
+@import "./blocks/invitation.scss";
+@import "./blocks/main.scss";
+@import "./blocks/map.scss";
+@import "./blocks/program.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/step.scss";
+@import "./blocks/stock.scss";
+@import "./blocks/subproducts.scss";
+@import "./blocks/subscribe.scss";
