@@ -1,7 +1,22 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+img {
+  object-fit: contain;
+}
+
 body {
-  font-family: "Lato", sans-serif;
-  /* stylelint-disable-next-line color-hex-length */
-  /* stylelint-disable-next-line color-hex-length */
-  color: var(--color-primary, #444444);
+  width: 100%;
+  margin: 0 auto;
+  font-family: var(--font-base, inherit);
+  font-size: 14px;
+  line-height: 1.29;
+  background-color: var(--bg-primary, #ffffff);
+  color: var(--color-base, #444444);
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
