@@ -1,1 +1,35 @@
-// Здесь стили
+.header__navigation {
+  margin: 13px 20px 14px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header__navigation {
+    margin: 25px 30px 65px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__navigation {
+    margin: 55px 110px 29px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+.header__logo-navigatio {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header__logo-wrapper {
+    justify-content: flex-start;
+  }
+}
